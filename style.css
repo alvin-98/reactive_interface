@@ -57,3 +57,26 @@ body {
     transform: scale(0.5) translate(10px, 10px); /* Shrink and move as it fades */
   }
 }
+
+/* Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom Arrow Cursor Styling */
+.custom-cursor {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid hsl(180, 80%, 50%); /* Initial hue; will change dynamically */
+  pointer-events: none; /* Allow click-through */
+  transform: translate(-50%, -50%);
+  transition: border-color 0.1s ease; /* Smooth transition for color change */
+  clip-path: polygon(
+    30% 0%,
+    100% 50%,
+    50% 100%
+  ); /* Creates a pointed arrow shape */
+}

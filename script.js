@@ -72,3 +72,19 @@ function createTailElement(x, y) {
 document.addEventListener("mousemove", (event) => {
   createTailElement(event.pageX, event.pageY);
 });
+
+// Create a custom arrow cursor
+const customCursor = document.createElement("div");
+customCursor.className = "custom-cursor";
+document.body.appendChild(customCursor);
+
+// Update the arrow position and color to match the hue
+document.addEventListener("mousemove", (event) => {
+  // Position the custom cursor near the mouse
+  customCursor.style.left = `${event.pageX}px`;
+  customCursor.style.top = `${event.pageY}px`;
+
+  // Synchronize the color with the current hue
+  customCursor.style.borderColor = `hsl(${hue}, 80%, 50%)`;
+  createTailElement(event.pageX, event.pageY);
+});
