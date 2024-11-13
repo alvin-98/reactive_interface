@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reactive Visual Interface Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="neutral">
+    <div id="container">
+      <header>
+        <h1>Welcome to the Reactive Interface</h1>
+      </header>
+
+      <!-- Avatar Section -->
+      <div id="avatar" class="neutral-avatar"></div>
+
+      <!-- Interaction Buttons -->
+      <div id="interaction-buttons">
+        <button onclick="setTheme('vibrant')">Simulate Fast Interaction</button>
+        <button onclick="setTheme('calm')">Simulate Slow Interaction</button>
+        <button onclick="updateAvatar('energetic')">
+          Set Avatar to Energetic
+        </button>
+        <button onclick="updateAvatar('calm')">Set Avatar to Calm</button>
+      </div>
+
+      <!-- Content Sections -->
+      <section class="content-section" onclick="highlightSection(this)">
+        <h2>Section 1</h2>
+        <p>This is the first content section.</p>
+      </section>
+
+      <section class="content-section" onclick="highlightSection(this)">
+        <h2>Section 2</h2>
+        <p>This is the second content section.</p>
+      </section>
+
+      <section class="content-section" onclick="highlightSection(this)">
+        <h2>Section 3</h2>
+        <p>This is the third content section.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

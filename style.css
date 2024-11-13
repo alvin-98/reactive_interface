@@ -1,0 +1,62 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Theme Styles */
+.neutral {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.vibrant {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.calm {
+  background-color: #d1c4e9;
+  color: #4a148c;
+}
+
+/* Avatar Styling */
+#avatar {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.neutral-avatar {
+  background-color: #b0bec5 !important;
+}
+
+.energetic-avatar {
+  background-color: #ff8a65 !important;
+}
+
+.calm-avatar {
+  background-color: #4fc3f7 !important;
+}
+
+/* Content Sections */
+.content-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.highlighted-section {
+  background-color: #e0f7fa;
+  border-color: #00acc1;
+}
